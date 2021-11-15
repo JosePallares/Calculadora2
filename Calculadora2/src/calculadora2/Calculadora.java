@@ -1,7 +1,15 @@
 package calculadora2;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
 public class Calculadora extends javax.swing.JFrame {
 
+    ScriptEngineManager scriptEM = new ScriptEngineManager();
+    ScriptEngine scriptE = scriptEM.getEngineByName("JavaScript");
     
     public Calculadora() {
         initComponents();
@@ -388,7 +396,7 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_9ActionPerformed
 
     private void btn_multiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiplicarActionPerformed
-        addNumero("x");
+        addNumero("*");
     }//GEN-LAST:event_btn_multiplicarActionPerformed
 
     private void btn_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cosActionPerformed
@@ -429,6 +437,7 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void btn_sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sumaActionPerformed
         addNumero("+");
+        
     }//GEN-LAST:event_btn_sumaActionPerformed
 
     private void btn_eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eActionPerformed
@@ -444,7 +453,12 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_comaActionPerformed
 
     private void btn_igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_igualActionPerformed
-        addNumero("=");
+        try {
+            String resultado = scriptE.eval(TxtOperacion.getText()).toString();
+            TxtResultado.setText(resultado);
+        } catch (ScriptException ex) {
+            
+        }
     }//GEN-LAST:event_btn_igualActionPerformed
 
     /**
