@@ -1,5 +1,6 @@
 package calculadora2;
 
+import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.script.ScriptEngine;
@@ -14,6 +15,7 @@ public class Calculadora extends javax.swing.JFrame {
     public Calculadora() {
         initComponents();
         setLocationRelativeTo(null);
+        setResizable(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -23,6 +25,7 @@ public class Calculadora extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         TxtOperacion = new javax.swing.JLabel();
         TxtResultado = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         btn_AC = new javax.swing.JButton();
         btn_cambiosigno = new javax.swing.JButton();
@@ -43,7 +46,7 @@ public class Calculadora extends javax.swing.JFrame {
         btn_2 = new javax.swing.JButton();
         btn_3 = new javax.swing.JButton();
         btn_suma = new javax.swing.JButton();
-        btn_e = new javax.swing.JButton();
+        btn_raiz = new javax.swing.JButton();
         btn_0 = new javax.swing.JButton();
         btn_coma = new javax.swing.JButton();
         btn_igual = new javax.swing.JButton();
@@ -59,20 +62,31 @@ public class Calculadora extends javax.swing.JFrame {
         TxtResultado.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
         TxtResultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
 
+        jButton1.setText("Dark mode");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TxtOperacion, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
+            .addComponent(TxtOperacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(TxtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 261, Short.MAX_VALUE)
+                .addComponent(jButton1))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TxtOperacion, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TxtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+                .addComponent(TxtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -309,17 +323,17 @@ public class Calculadora extends javax.swing.JFrame {
         });
         jPanel2.add(btn_suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 60, 60));
 
-        btn_e.setBackground(new java.awt.Color(245, 137, 44));
-        btn_e.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        btn_e.setForeground(new java.awt.Color(0, 0, 0));
-        btn_e.setText("e");
-        btn_e.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_e.addActionListener(new java.awt.event.ActionListener() {
+        btn_raiz.setBackground(new java.awt.Color(245, 137, 44));
+        btn_raiz.setFont(new java.awt.Font("Apple Color Emoji", 0, 12)); // NOI18N
+        btn_raiz.setForeground(new java.awt.Color(0, 0, 0));
+        btn_raiz.setText("Raiz");
+        btn_raiz.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_raiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_eActionPerformed(evt);
+                btn_raizActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_e, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 60, 60));
+        jPanel2.add(btn_raiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 60, 60));
 
         btn_0.setBackground(new java.awt.Color(255, 255, 255));
         btn_0.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
@@ -357,7 +371,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         jPanel2.add(btn_igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 130, 60));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 360, 360));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 360, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -440,9 +454,9 @@ public class Calculadora extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btn_sumaActionPerformed
 
-    private void btn_eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eActionPerformed
-        addNumero("e");
-    }//GEN-LAST:event_btn_eActionPerformed
+    private void btn_raizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_raizActionPerformed
+        addNumero("sqrt");
+    }//GEN-LAST:event_btn_raizActionPerformed
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
         addNumero("0");
@@ -460,6 +474,51 @@ public class Calculadora extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_btn_igualActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jPanel1.setBackground(Color.black);
+        jPanel2.setBackground(Color.black);
+        btn_0.setBackground(Color.DARK_GRAY);
+        btn_0.setForeground(Color.white);
+        btn_1.setBackground(Color.DARK_GRAY);
+        btn_1.setForeground(Color.white);
+        btn_2.setBackground(Color.DARK_GRAY);
+        btn_2.setForeground(Color.white);
+        btn_3.setBackground(Color.DARK_GRAY);
+        btn_3.setForeground(Color.white);
+        btn_4.setBackground(Color.DARK_GRAY);
+        btn_4.setForeground(Color.white);
+        btn_5.setBackground(Color.DARK_GRAY);
+        btn_5.setForeground(Color.white);
+        btn_6.setBackground(Color.DARK_GRAY);
+        btn_6.setForeground(Color.white);
+        btn_7.setBackground(Color.DARK_GRAY);
+        btn_7.setForeground(Color.white);
+        btn_8.setBackground(Color.DARK_GRAY);
+        btn_8.setForeground(Color.white);
+        btn_9.setBackground(Color.DARK_GRAY);
+        btn_9.setForeground(Color.white);
+        btn_coma.setBackground(Color.DARK_GRAY);
+        btn_coma.setForeground(Color.white);
+        btn_AC.setBackground(Color.LIGHT_GRAY);
+        btn_AC.setForeground(Color.white);
+        btn_cambiosigno.setBackground(Color.LIGHT_GRAY);
+        btn_cambiosigno.setForeground(Color.white);
+        btn_porcentaje.setBackground(Color.LIGHT_GRAY);
+        btn_porcentaje.setForeground(Color.white);
+        btn_igual.setForeground(Color.white);
+        btn_dividir.setForeground(Color.white);
+        btn_suma.setForeground(Color.white);
+        btn_resta.setForeground(Color.white);
+        btn_raiz.setForeground(Color.white);
+        btn_sin.setForeground(Color.white);
+        btn_cos.setForeground(Color.white);
+        btn_tg.setForeground(Color.white);
+        btn_multiplicar.setForeground(Color.white);
+        btn_cambiosigno.setForeground(Color.white);
+        TxtOperacion.setForeground(Color.white);
+        TxtResultado.setForeground(Color.white);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -518,14 +577,15 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton btn_coma;
     private javax.swing.JButton btn_cos;
     private javax.swing.JButton btn_dividir;
-    private javax.swing.JButton btn_e;
     private javax.swing.JButton btn_igual;
     private javax.swing.JButton btn_multiplicar;
     private javax.swing.JButton btn_porcentaje;
+    private javax.swing.JButton btn_raiz;
     private javax.swing.JButton btn_resta;
     private javax.swing.JButton btn_sin;
     private javax.swing.JButton btn_suma;
     private javax.swing.JButton btn_tg;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
