@@ -16,29 +16,29 @@ public class Calculadora extends javax.swing.JFrame {
         TxtOperacion = new javax.swing.JLabel();
         TxtResultado = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
+        btn_AC = new javax.swing.JButton();
+        btn_cambiosigno = new javax.swing.JButton();
+        btn_porcentaje = new javax.swing.JButton();
+        btn_dividir = new javax.swing.JButton();
+        btn_sin = new javax.swing.JButton();
+        btn_7 = new javax.swing.JButton();
+        btn_8 = new javax.swing.JButton();
+        btn_9 = new javax.swing.JButton();
+        btn_multiplicar = new javax.swing.JButton();
+        btn_cos = new javax.swing.JButton();
+        btn_4 = new javax.swing.JButton();
+        btn_5 = new javax.swing.JButton();
+        btn_6 = new javax.swing.JButton();
+        btn_resta = new javax.swing.JButton();
+        btn_tg = new javax.swing.JButton();
+        btn_1 = new javax.swing.JButton();
+        btn_2 = new javax.swing.JButton();
+        btn_3 = new javax.swing.JButton();
+        btn_suma = new javax.swing.JButton();
+        btn_e = new javax.swing.JButton();
+        btn_0 = new javax.swing.JButton();
+        btn_coma = new javax.swing.JButton();
+        btn_igual = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -47,11 +47,9 @@ public class Calculadora extends javax.swing.JFrame {
 
         TxtOperacion.setFont(new java.awt.Font("Apple Color Emoji", 0, 18)); // NOI18N
         TxtOperacion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        TxtOperacion.setText("5x10+20");
 
         TxtResultado.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
         TxtResultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        TxtResultado.setText("70");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -75,378 +73,379 @@ public class Calculadora extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(209, 209, 209));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("AC");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_AC.setBackground(new java.awt.Color(255, 255, 255));
+        btn_AC.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_AC.setForeground(new java.awt.Color(0, 0, 0));
+        btn_AC.setText("AC");
+        btn_AC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_AC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_ACActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 60));
+        jPanel2.add(btn_AC, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 60));
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Apple Color Emoji", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("+/-");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_cambiosigno.setBackground(new java.awt.Color(255, 255, 255));
+        btn_cambiosigno.setFont(new java.awt.Font("Apple Color Emoji", 0, 14)); // NOI18N
+        btn_cambiosigno.setForeground(new java.awt.Color(0, 0, 0));
+        btn_cambiosigno.setText("+/-");
+        btn_cambiosigno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_cambiosigno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_cambiosignoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 60, 60));
+        jPanel2.add(btn_cambiosigno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 60, 60));
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jButton3.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("%");
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btn_porcentaje.setBackground(new java.awt.Color(255, 255, 255));
+        btn_porcentaje.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_porcentaje.setForeground(new java.awt.Color(0, 0, 0));
+        btn_porcentaje.setText("%");
+        btn_porcentaje.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_porcentaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btn_porcentajeActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 60, 60));
+        jPanel2.add(btn_porcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 60, 60));
 
-        jButton4.setBackground(new java.awt.Color(245, 137, 44));
-        jButton4.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jButton4.setText("/");
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn_dividir.setBackground(new java.awt.Color(245, 137, 44));
+        btn_dividir.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_dividir.setForeground(new java.awt.Color(0, 0, 0));
+        btn_dividir.setText("/");
+        btn_dividir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_dividir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn_dividirActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 60, 60));
+        jPanel2.add(btn_dividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 60, 60));
 
-        jButton5.setBackground(new java.awt.Color(245, 137, 44));
-        jButton5.setFont(new java.awt.Font("Apple Color Emoji", 0, 16)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("SIN");
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btn_sin.setBackground(new java.awt.Color(245, 137, 44));
+        btn_sin.setFont(new java.awt.Font("Apple Color Emoji", 0, 16)); // NOI18N
+        btn_sin.setForeground(new java.awt.Color(0, 0, 0));
+        btn_sin.setText("SIN");
+        btn_sin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_sin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btn_sinActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 60, 60));
+        jPanel2.add(btn_sin, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 60, 60));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
-        jButton6.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(0, 0, 0));
-        jButton6.setText("7");
-        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btn_7.setBackground(new java.awt.Color(255, 255, 255));
+        btn_7.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_7.setForeground(new java.awt.Color(0, 0, 0));
+        btn_7.setText("7");
+        btn_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btn_7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 60, 60));
+        jPanel2.add(btn_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 60, 60));
 
-        jButton7.setBackground(new java.awt.Color(255, 255, 255));
-        jButton7.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(0, 0, 0));
-        jButton7.setText("8");
-        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btn_8.setBackground(new java.awt.Color(255, 255, 255));
+        btn_8.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_8.setForeground(new java.awt.Color(0, 0, 0));
+        btn_8.setText("8");
+        btn_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btn_8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 60, 60));
+        jPanel2.add(btn_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 60, 60));
 
-        jButton8.setBackground(new java.awt.Color(255, 255, 255));
-        jButton8.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(0, 0, 0));
-        jButton8.setText("9");
-        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btn_9.setBackground(new java.awt.Color(255, 255, 255));
+        btn_9.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_9.setForeground(new java.awt.Color(0, 0, 0));
+        btn_9.setText("9");
+        btn_9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btn_9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 60, 60));
+        jPanel2.add(btn_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 60, 60));
 
-        jButton9.setBackground(new java.awt.Color(245, 137, 44));
-        jButton9.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(0, 0, 0));
-        jButton9.setText("X");
-        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btn_multiplicar.setBackground(new java.awt.Color(245, 137, 44));
+        btn_multiplicar.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_multiplicar.setForeground(new java.awt.Color(0, 0, 0));
+        btn_multiplicar.setText("X");
+        btn_multiplicar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_multiplicar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btn_multiplicarActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 60, 60));
+        jPanel2.add(btn_multiplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 60, 60));
 
-        jButton10.setBackground(new java.awt.Color(245, 137, 44));
-        jButton10.setFont(new java.awt.Font("Apple Color Emoji", 0, 16)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(0, 0, 0));
-        jButton10.setText("COS");
-        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btn_cos.setBackground(new java.awt.Color(245, 137, 44));
+        btn_cos.setFont(new java.awt.Font("Apple Color Emoji", 0, 16)); // NOI18N
+        btn_cos.setForeground(new java.awt.Color(0, 0, 0));
+        btn_cos.setText("COS");
+        btn_cos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_cos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btn_cosActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 60, 60));
+        jPanel2.add(btn_cos, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 60, 60));
 
-        jButton11.setBackground(new java.awt.Color(255, 255, 255));
-        jButton11.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(0, 0, 0));
-        jButton11.setText("4");
-        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btn_4.setBackground(new java.awt.Color(255, 255, 255));
+        btn_4.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_4.setForeground(new java.awt.Color(0, 0, 0));
+        btn_4.setText("4");
+        btn_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btn_4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 60, 60));
+        jPanel2.add(btn_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 60, 60));
 
-        jButton12.setBackground(new java.awt.Color(255, 255, 255));
-        jButton12.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(0, 0, 0));
-        jButton12.setText("5");
-        jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btn_5.setBackground(new java.awt.Color(255, 255, 255));
+        btn_5.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_5.setForeground(new java.awt.Color(0, 0, 0));
+        btn_5.setText("5");
+        btn_5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btn_5ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 60, 60));
+        jPanel2.add(btn_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 60, 60));
 
-        jButton13.setBackground(new java.awt.Color(255, 255, 255));
-        jButton13.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(0, 0, 0));
-        jButton13.setText("6");
-        jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btn_6.setBackground(new java.awt.Color(255, 255, 255));
+        btn_6.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_6.setForeground(new java.awt.Color(0, 0, 0));
+        btn_6.setText("6");
+        btn_6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btn_6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 60, 60));
+        jPanel2.add(btn_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 60, 60));
 
-        jButton14.setBackground(new java.awt.Color(250, 87, 31));
-        jButton14.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(0, 0, 0));
-        jButton14.setText("-");
-        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        btn_resta.setBackground(new java.awt.Color(250, 87, 31));
+        btn_resta.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_resta.setForeground(new java.awt.Color(0, 0, 0));
+        btn_resta.setText("-");
+        btn_resta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_resta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                btn_restaActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 60, 60));
+        jPanel2.add(btn_resta, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 60, 60));
 
-        jButton15.setBackground(new java.awt.Color(250, 87, 31));
-        jButton15.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(0, 0, 0));
-        jButton15.setText("TG");
-        jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btn_tg.setBackground(new java.awt.Color(250, 87, 31));
+        btn_tg.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_tg.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tg.setText("TG");
+        btn_tg.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_tg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btn_tgActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 60, 60));
+        jPanel2.add(btn_tg, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 60, 60));
 
-        jButton16.setBackground(new java.awt.Color(255, 255, 255));
-        jButton16.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(0, 0, 0));
-        jButton16.setText("1");
-        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        btn_1.setBackground(new java.awt.Color(255, 255, 255));
+        btn_1.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_1.setText("1");
+        btn_1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                btn_1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 60, 60));
+        jPanel2.add(btn_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 60, 60));
 
-        jButton17.setBackground(new java.awt.Color(255, 255, 255));
-        jButton17.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(0, 0, 0));
-        jButton17.setText("2");
-        jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btn_2.setBackground(new java.awt.Color(255, 255, 255));
+        btn_2.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_2.setText("2");
+        btn_2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btn_2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 60, 60));
+        jPanel2.add(btn_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 60, 60));
 
-        jButton18.setBackground(new java.awt.Color(255, 255, 255));
-        jButton18.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(0, 0, 0));
-        jButton18.setText("3");
-        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        btn_3.setBackground(new java.awt.Color(255, 255, 255));
+        btn_3.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_3.setForeground(new java.awt.Color(0, 0, 0));
+        btn_3.setText("3");
+        btn_3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                btn_3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 60, 60));
+        jPanel2.add(btn_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 60, 60));
 
-        jButton19.setBackground(new java.awt.Color(245, 137, 44));
-        jButton19.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(0, 0, 0));
-        jButton19.setText("+");
-        jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btn_suma.setBackground(new java.awt.Color(245, 137, 44));
+        btn_suma.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_suma.setForeground(new java.awt.Color(0, 0, 0));
+        btn_suma.setText("+");
+        btn_suma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_suma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btn_sumaActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 60, 60));
+        jPanel2.add(btn_suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 60, 60));
 
-        jButton20.setBackground(new java.awt.Color(245, 137, 44));
-        jButton20.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(0, 0, 0));
-        jButton20.setText("e");
-        jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        btn_e.setBackground(new java.awt.Color(245, 137, 44));
+        btn_e.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_e.setForeground(new java.awt.Color(0, 0, 0));
+        btn_e.setText("e");
+        btn_e.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_e.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                btn_eActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 60, 60));
+        jPanel2.add(btn_e, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 60, 60));
 
-        jButton21.setBackground(new java.awt.Color(255, 255, 255));
-        jButton21.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(0, 0, 0));
-        jButton21.setText("0");
-        jButton21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        btn_0.setBackground(new java.awt.Color(255, 255, 255));
+        btn_0.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_0.setForeground(new java.awt.Color(0, 0, 0));
+        btn_0.setText("0");
+        btn_0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                btn_0ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 130, 60));
+        jPanel2.add(btn_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 130, 60));
 
-        jButton22.setBackground(new java.awt.Color(255, 255, 255));
-        jButton22.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(0, 0, 0));
-        jButton22.setText(",");
-        jButton22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        btn_coma.setBackground(new java.awt.Color(255, 255, 255));
+        btn_coma.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_coma.setForeground(new java.awt.Color(0, 0, 0));
+        btn_coma.setText(",");
+        btn_coma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_coma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                btn_comaActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 60, 60));
+        jPanel2.add(btn_coma, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 60, 60));
 
-        jButton23.setBackground(new java.awt.Color(245, 137, 44));
-        jButton23.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
-        jButton23.setForeground(new java.awt.Color(0, 0, 0));
-        jButton23.setText("=");
-        jButton23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        btn_igual.setBackground(new java.awt.Color(245, 137, 44));
+        btn_igual.setFont(new java.awt.Font("Apple Color Emoji", 0, 24)); // NOI18N
+        btn_igual.setForeground(new java.awt.Color(0, 0, 0));
+        btn_igual.setText("=");
+        btn_igual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_igual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                btn_igualActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 130, 60));
+        jPanel2.add(btn_igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 130, 60));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 360, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btn_ACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ACActionPerformed
+        TxtOperacion.setText("");
+        TxtResultado.setText("");
+    }//GEN-LAST:event_btn_ACActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_cambiosignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cambiosignoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btn_cambiosignoActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void btn_porcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_porcentajeActionPerformed
+        addNumero("%");
+    }//GEN-LAST:event_btn_porcentajeActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void btn_dividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dividirActionPerformed
+        addNumero("/");
+    }//GEN-LAST:event_btn_dividirActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void btn_sinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sinActionPerformed
+        addNumero("sin");
+    }//GEN-LAST:event_btn_sinActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void btn_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_7ActionPerformed
+        addNumero("7");
+    }//GEN-LAST:event_btn_7ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void btn_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_8ActionPerformed
+        addNumero("8");
+    }//GEN-LAST:event_btn_8ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    private void btn_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_9ActionPerformed
+        addNumero("9");
+    }//GEN-LAST:event_btn_9ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    private void btn_multiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiplicarActionPerformed
+        addNumero("x");
+    }//GEN-LAST:event_btn_multiplicarActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    private void btn_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cosActionPerformed
+        addNumero("cos");
+    }//GEN-LAST:event_btn_cosActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    private void btn_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4ActionPerformed
+        addNumero("4");
+    }//GEN-LAST:event_btn_4ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    private void btn_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_5ActionPerformed
+        addNumero("5");
+    }//GEN-LAST:event_btn_5ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    private void btn_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_6ActionPerformed
+        addNumero("6");
+    }//GEN-LAST:event_btn_6ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    private void btn_restaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_restaActionPerformed
+        addNumero("-");
+    }//GEN-LAST:event_btn_restaActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    private void btn_tgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tgActionPerformed
+        addNumero("tg");
+    }//GEN-LAST:event_btn_tgActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    private void btn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        addNumero("1");
+    }//GEN-LAST:event_btn_1ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    private void btn_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2ActionPerformed
+        addNumero("2");
+    }//GEN-LAST:event_btn_2ActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed
+        addNumero("3");
+    }//GEN-LAST:event_btn_3ActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    private void btn_sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sumaActionPerformed
+        addNumero("+");
+    }//GEN-LAST:event_btn_sumaActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    private void btn_eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eActionPerformed
+        addNumero("e");
+    }//GEN-LAST:event_btn_eActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
+        addNumero("0");
+    }//GEN-LAST:event_btn_0ActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    private void btn_comaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_comaActionPerformed
+        addNumero(",");
+    }//GEN-LAST:event_btn_comaActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+    private void btn_igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_igualActionPerformed
+        addNumero("=");
+    }//GEN-LAST:event_btn_igualActionPerformed
 
     /**
      * @param args the command line arguments
@@ -482,33 +481,37 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void addNumero (String digito){
+        TxtOperacion.setText(TxtOperacion.getText()+digito);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel TxtOperacion;
     private javax.swing.JLabel TxtResultado;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btn_0;
+    private javax.swing.JButton btn_1;
+    private javax.swing.JButton btn_2;
+    private javax.swing.JButton btn_3;
+    private javax.swing.JButton btn_4;
+    private javax.swing.JButton btn_5;
+    private javax.swing.JButton btn_6;
+    private javax.swing.JButton btn_7;
+    private javax.swing.JButton btn_8;
+    private javax.swing.JButton btn_9;
+    private javax.swing.JButton btn_AC;
+    private javax.swing.JButton btn_cambiosigno;
+    private javax.swing.JButton btn_coma;
+    private javax.swing.JButton btn_cos;
+    private javax.swing.JButton btn_dividir;
+    private javax.swing.JButton btn_e;
+    private javax.swing.JButton btn_igual;
+    private javax.swing.JButton btn_multiplicar;
+    private javax.swing.JButton btn_porcentaje;
+    private javax.swing.JButton btn_resta;
+    private javax.swing.JButton btn_sin;
+    private javax.swing.JButton btn_suma;
+    private javax.swing.JButton btn_tg;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
